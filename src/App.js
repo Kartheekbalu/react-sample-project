@@ -1,19 +1,16 @@
 import React from 'react';
 import './App.css';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Navbar />
+      <main className="main-content">
         <h1>Hello World! 👋</h1>
-        <p>Welcome to your React Sample Project</p>
-        <p>
-          This is a simple React application demonstrating the basics.
-        </p>
-        <button className="App-button" onClick={() => alert('Button clicked!')}>
-          Click Me!
-        </button>
-      </header>
+      </main>
+      <Footer />
     </div>
   );
 }
